@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>To Do List</title>
+
+
+  
+  
+  
+</head>
+<body>
+
+  <div class="main-container">
+    <div class="top-container">
+      <input id ="task-entry" class="input-box" type="text" placeholder="Add a task">
+      <Button onclick="addTask()" class="add-button">Add</Button>
+    </div>
+
+    <!-- <div id="task-box" class="task-box">
+    </div> -->
+
+    <div id="todo-container" class="todo-container">
+
+    </div>
+  </div>
+
+
+
+
+  <script>
+    todos=[];
+
+
+
+
+    function addTask(){
+      let element=document.getElementById("task-entry");
+      let task_name=element.value;
+      todos.push(task_name);
+      element.value='';
+      render();
+    }
+
+    function render(){
+      let parent=document.getElementById("todo-container");
+      parent.innerHTML='';
+      todos.forEach(displayElement)
+    }
+
+    function displayElement(task_title){
+      console.log(task_title);
+      let parent=document.getElementById("todo-container");
+      let child=document.createElement('div');
+      child.id="task-box";
+      child.innerText=task_title;
+      parent.appendChild(child);
+
+
+    }
+  </script>
+  
+
+  
+</body>
+</html>

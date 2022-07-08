@@ -1,0 +1,87 @@
+body {
+  background-color: #d8ecd6;
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 90%;
+}
+
+.main-container {
+
+  min-width: 300px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  padding-top: 160px;
+  transform: translateX(-50%);
+}
+
+.top-container {
+  max-width: 600px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.input-box {
+  flex: 1;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+}
+
+.input-box::placeholder {
+
+  font-size: 10px;
+}
+
+.add-button {
+
+  flex: 1;
+  max-width: 80px;
+  background-color: #7fe573;
+  border: none;
+  border-radius: 5px;
+
+}
+
+.todo-container {
+
+  background-color: rgb(183, 178, 178);
+  max-width: 600px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  padding-left: 8px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+
+
+}
+
+#task-box {
+
+  background-color: #d8ecd6;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  padding-left: 6px;
+  padding-top: 6px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+
+
+
+}
